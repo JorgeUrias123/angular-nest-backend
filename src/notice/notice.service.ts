@@ -18,7 +18,7 @@ export class NoticeService {
     const notice = new this.noticeModel({
       ...data,
       image: filePath,
-      imageUrl: `${process.env.MONGO_URI}${filePath}`
+      imageUrl: `${process.env.URI_IMAGES}${filePath}`
     });
 
     return await notice.save();

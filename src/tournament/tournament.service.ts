@@ -43,7 +43,7 @@ export class TournamentService {
     }
   
     const filePath = file;
-    const fileUrl = `${process.env.MONGO_URI}${filePath}`;
+    const fileUrl = `${process.env.URI_IMAGES}${filePath}`;
   
     tournament.image = filePath;
     tournament.imageUrl = fileUrl;
