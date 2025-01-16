@@ -1,0 +1,9 @@
+services:
+  db:
+    container_name: tkd-db
+    image: mongo:8.0.3
+    volumes:
+      - ./mongo:/data/db
+    ports:
+      - 27017:27017
+    restart: always
